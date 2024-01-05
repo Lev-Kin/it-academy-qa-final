@@ -5,13 +5,16 @@ exports.config = {
 
   specs: ['./features/**/*.feature'],
 
-  maxInstances: 1,
+  maxInstances: 10,
 
   capabilities: [
     {
       maxInstances: 1,
       browserName: 'chrome',
       acceptInsecureCerts: true,
+      'goog:chromeOptions': {
+        args: ['--ignore-certificate-errors'],
+      },
     },
   ],
 
@@ -34,7 +37,7 @@ exports.config = {
   reporters: ['cucumberjs-json'],
 
   cucumberOpts: {
-    require: ['./step-definitions/steps.js', './helpers/parameterTypes.js'],
+    require: ['./features/step-definitions/steps.js', './helpers/parameterTypes.js'],
     backtrace: false,
     requireModule: [],
     dryRun: false,

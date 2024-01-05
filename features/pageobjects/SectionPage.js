@@ -1,6 +1,6 @@
 class SectionPage {
   get 'Section Name'() {
-    return '.landing-header__title';
+    return 'link header__badge badge';
   }
 
   get 'Bread Crumps'() {

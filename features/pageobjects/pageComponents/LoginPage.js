@@ -1,6 +1,6 @@
 class LoginPage {
   get 'Enter Page'() {
-    return '.top-panel__userbar__auth__ico';
+    return '.user-bar__item a';
   }
 
   get 'Login From Email'() {
@@ -28,4 +28,4 @@ class LoginPage {
   }
 }
 
-module.exports = LoginPage;
+module.exports = { LoginPage };

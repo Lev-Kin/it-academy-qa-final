@@ -7,10 +7,6 @@ class MainPage {
     return '.b-mpgs-header h2 a';
   }
 
-  get 'Top Panel Items'() {
-    return '.top-panel__hnav__li.top-panel__hnav__li_r a';
-  }
-
   get 'Stationery Main Menu'() {
     return '#staticmenu_body_business li a';
   }
@@ -24,4 +20,4 @@ class MainPage {
   }
 }
 
-module.exports = MainPage;
+module.exports = { MainPage };

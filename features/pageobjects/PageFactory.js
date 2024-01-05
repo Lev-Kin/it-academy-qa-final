@@ -1,29 +1,23 @@
-const { Cart } = require('./pageComponents/ShoppingCart');
-const { Search } = require('./pageComponents/SearchPage');
+const { Search } = require('./pageComponents/Search');
+const { LoginPage } = require('./pageComponents/LoginPage');
 const { MainPage } = require('./MainPage');
 const { ItemPage } = require('./ItemPage');
-const { LoginPage } = require('./pageComponents/LoginPage');
-const { LeftNavBar } = require('./LeftNavBar');
-const { SectionPage } = require('./SelectionPage');
-const { BooksSection } = require('./BooksSection');
-const { PersonalAccount } = require('./pageComponents/PersonalAccountPage');
+const { LeftNavigationBar } = require('./LeftNavBar');
+const { SectionPage } = require('./SectionPage');
+const { BooksSectionPage } = require('./BooksSectionPage');
 
 class PageFactory {
-  static Search = new Search();
+  static 'Search' = new Search();
 
   static 'Item Page' = new ItemPage();
 
-  static 'Left Navigation Bar' = new LeftNavBar();
+  static 'Left Navigation Bar' = new LeftNavigationBar();
 
   static 'Section Page' = new SectionPage();
 
-  static 'Books Section' = new BooksSection();
+  static 'Books Section' = new BooksSectionPage();
 
   static 'Login Page' = new LoginPage();
-
-  static 'Personal Account' = new PersonalAccount();
-
-  static Cart = new Cart();
 
   static 'Main Page' = new MainPage();
 }

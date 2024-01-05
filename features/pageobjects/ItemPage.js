@@ -1,11 +1,11 @@
 class ItemPage {
   get 'Product Name'() {
-    return '//*[@class="b-product-title__heading"]/h1';
+    return '.product-card__title';
   }
 
   get 'Add To Cart Button'() {
-    return '.first-button';
+    return 'product-card__button btn btn-primary btn-sm';
   }
 }
 
-module.exports = ItemPage;
+module.exports = { ItemPage };
