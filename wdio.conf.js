@@ -9,11 +9,10 @@ exports.config = {
 
   capabilities: [
     {
-      maxInstances: 1,
       browserName: 'chrome',
       acceptInsecureCerts: true,
       'goog:chromeOptions': {
-        args: ['--ignore-certificate-errors'],
+        args: ['--headless', '--ignore-certificate-errors'],
       },
     },
   ],
@@ -22,9 +21,9 @@ exports.config = {
 
   bail: 0,
 
-  baseUrl: '',
+  baseUrl: 'http://localhost',
 
-  waitforTimeout: 60000,
+  waitforTimeout: 10000,
 
   connectionRetryTimeout: 120000,
 
@@ -34,7 +33,7 @@ exports.config = {
 
   framework: 'cucumber',
 
-  reporters: ['cucumberjs-json'],
+  reporters: ['spec'],
 
   cucumberOpts: {
     require: ['./features/step-definitions/steps.js', './helpers/parameterTypes.js'],
@@ -52,8 +51,8 @@ exports.config = {
 
   onComplete() {
     generate({
-      jsonDir: '.tmp/json/',
-      reportPath: '.tmp/report/',
+      jsonDir: '1_info_test/json/',
+      reportPath: '1_info_test/report/',
     });
   },
 };
