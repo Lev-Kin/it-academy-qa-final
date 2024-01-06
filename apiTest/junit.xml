@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="0" errors="0" time="7.269">
-  <testsuite name="api testing of &quot;Oz.by&quot; website" errors="0" failures="0" skipped="0" timestamp="2024-01-05T14:37:17" time="7.188" tests="6">
-    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the main page" name="api testing of &quot;Oz.by&quot; website Check status code of the main page" time="1.283">
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="5.477">
+  <testsuite name="api testing of &quot;Oz.by&quot; website" errors="0" failures="0" skipped="0" timestamp="2024-01-06T14:01:19" time="4.886" tests="6">
+    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the main page" name="api testing of &quot;Oz.by&quot; website Check status code of the main page" time="0.313">
     </testcase>
-    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the books section" name="api testing of &quot;Oz.by&quot; website Check status code of the books section" time="1.38">
+    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the books section" name="api testing of &quot;Oz.by&quot; website Check status code of the books section" time="0.556">
     </testcase>
-    <testcase classname="api testing of &quot;Oz.by&quot; website check status code for opening personal account" name="api testing of &quot;Oz.by&quot; website check status code for opening personal account" time="0.76">
+    <testcase classname="api testing of &quot;Oz.by&quot; website check status code for opening personal account" name="api testing of &quot;Oz.by&quot; website check status code for opening personal account" time="0.13">
     </testcase>
-    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the stationery section" name="api testing of &quot;Oz.by&quot; website Check status code of the stationery section" time="1.389">
+    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the stationery section" name="api testing of &quot;Oz.by&quot; website Check status code of the stationery section" time="0.551">
     </testcase>
-    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the delivery and payment page" name="api testing of &quot;Oz.by&quot; website Check status code of the delivery and payment page" time="0.897">
+    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the delivery and payment page" name="api testing of &quot;Oz.by&quot; website Check status code of the delivery and payment page" time="0.104">
     </testcase>
-    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the shop map" name="api testing of &quot;Oz.by&quot; website Check status code of the shop map" time="0.922">
+    <testcase classname="api testing of &quot;Oz.by&quot; website Check status code of the shop map" name="api testing of &quot;Oz.by&quot; website Check status code of the shop map" time="0.131">
     </testcase>
   </testsuite>
 </testsuites>

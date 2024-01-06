@@ -4,7 +4,7 @@ class SectionPage {
   }
 
   get 'Bread Crumps'() {
-    return '.breadcrumbs__list__item span';
+    return '.breadcrumbs__list__li:nth-child(2) span';
   }
 }
 

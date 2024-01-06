@@ -4,7 +4,15 @@ class Search {
   }
 
   get 'First Search Result'() {
-    return 'search-form__submit';
+    return '.ui-menu-item:nth-child(1) a';
+  }
+
+  get 'First Search Submit'() {
+    return '.search-form__submit';
+  }
+
+  get 'First Search Results'() {
+    return '.product-card__button.btn.btn-outline-primary.btn-sm';
   }
 
   get 'Invalid Search Result'() {
