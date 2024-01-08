@@ -12,7 +12,7 @@ class Search {
   }
 
   get 'First Search Results'() {
-    return '.product-card__button.btn.btn-outline-primary.btn-sm';
+    return '.product-card__button:nth-child(1)';
   }
 
   get 'Invalid Search Result'() {

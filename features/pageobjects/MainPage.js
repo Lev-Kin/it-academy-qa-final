@@ -28,6 +28,10 @@ class MainPage {
     return '.up-btn.up-btn_visible';
   }
 
+  get 'Car Count'() {
+    return '#cart-count';
+  }
+
   async isSliderDisplayed() {
     const slider = await $(this.sliderSelector);
     return slider.isDisplayed();

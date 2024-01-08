@@ -12,7 +12,7 @@ exports.config = {
       browserName: 'chrome',
       acceptInsecureCerts: true,
       'goog:chromeOptions': {
-        args: ['--ignore-certificate-errors'],
+        args: ['--headless', '--ignore-certificate-errors'],
       },
     },
   ],
@@ -33,7 +33,7 @@ exports.config = {
 
   framework: 'cucumber',
 
-  reporters: ['cucumberjs-json'],
+  reporters: ['spec'],
 
   cucumberOpts: {
     require: ['./features/step-definitions/steps.js', './helpers/parameterTypes.js'],

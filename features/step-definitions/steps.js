@@ -47,6 +47,7 @@ Then('I should see the main {string} with various offers', async function (eleme
 });
 
 When('I click on {locator} button', async function (selector) {
+  await $(selector).waitForClickable();
   await $(selector).click();
 });
 
@@ -58,12 +59,7 @@ Then('I expect element {locator} is equal to {text}', async (selector, text) => 
   expect(await $(selector).getText()).to.equal(text);
 });
 
-When('I click on First Search Results button', async function () {
-  await $(PageFactory['Search']['First Search Results']).waitForClickable();
-  await $(PageFactory['Search']['First Search Results']).click();
-});
-
-Then('Then the cart should contain {string}', async function (element) {
+Then('I should see cart contain {number}', async function (element) {
   const isDisplayed = await PageFactory['Main Page'].isCarCountDisplayed();
   assert.isTrue(isDisplayed, `${element}`);
 });
