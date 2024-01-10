@@ -33,7 +33,7 @@ exports.config = {
 
   framework: 'cucumber',
 
-  reporters: ['spec'],
+  reporters: ['cucumberjs-json'],
 
   cucumberOpts: {
     require: ['./features/step-definitions/steps.js', './helpers/parameterTypes.js'],

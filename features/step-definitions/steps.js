@@ -41,11 +41,6 @@ Then('I should be taken to the Stationery category page', async function () {
   expect(await $(PageFactory['Section Page']['Bread Crumps']).getText()).to.equal('Канцтовары, учёба');
 });
 
-Then('I should see the main {string} with various offers', async function (element) {
-  const isDisplayed = await PageFactory['Main Page'].isSliderDisplayed();
-  assert.isTrue(isDisplayed, `${element}`);
-});
-
 When('I click on {locator} button', async function (selector) {
   await $(selector).waitForClickable();
   await $(selector).click();
@@ -59,7 +54,8 @@ Then('I expect element {locator} is equal to {text}', async (selector, text) => 
   expect(await $(selector).getText()).to.equal(text);
 });
 
-Then('I should see cart contain {number}', async function (element) {
-  const isDisplayed = await PageFactory['Main Page'].isCarCountDisplayed();
+Then('I should see the element {string}', async function (element) {
+  const isDisplayed = await PageFactory['Main Page'].isElementDisplayed(element);
+
   assert.isTrue(isDisplayed, `${element}`);
 });

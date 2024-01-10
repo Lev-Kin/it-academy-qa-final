@@ -32,14 +32,15 @@ class MainPage {
     return '#cart-count';
   }
 
-  async isSliderDisplayed() {
-    const slider = await $(this.sliderSelector);
-    return slider.isDisplayed();
-  }
+  async isElementDisplayed(element) {
+    let elementCheck = '';
+    if (element === 'slider') {
+      elementCheck = await $(this.sliderSelector);
+    } else {
+      elementCheck = await $(this.carCountSelector);
+    }
 
-  async isCarCountDisplayed() {
-    const carCount = await $(this.carCountSelector);
-    return carCount.isDisplayed();
+    return elementCheck.isDisplayed();
   }
 }
 

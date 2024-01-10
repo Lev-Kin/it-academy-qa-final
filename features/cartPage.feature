@@ -7,4 +7,4 @@ Feature: Testing Cart for "Oz" website
     When I search by phrase "Властелин Колец"
     And I click on "Search > First Search Submit" button
     And I click on "Search > First Search Results" button
-    Then I should see cart contain "number"
+    Then I should see the element "cart number"

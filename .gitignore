@@ -4,6 +4,7 @@ allure-results
 cucumber_report
 reports
 package-lock.json 
+apiTest/*.xml
 
 # Dependency directories
 node_modules/
@@ -23,3 +24,10 @@ out/
 # Temporary folders
 tmp/
 temp/
+
+# Reports and test results
+allure-results/
+.tmp/
+cucumber_report/
+reports/
+coverage/
